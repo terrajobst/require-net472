@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="build\Require472.targets" CopyToOutputDirectory="IfNewer" Pack="true" PackagePath="build\$(PackageId).targets" />
+  </ItemGroup>
+
+</Project>
+ 
